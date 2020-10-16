@@ -46,7 +46,7 @@ git cloneしてから、ローカルで動作をさせるまでに必要なコ�
 | user_id | references | null: false, foreign_key: true |
 | ramen_shop_id | references | null: false, foreign_key: true |
 |content|string|
-|score| string|
+|score| integer|
 
 ### Association
 
