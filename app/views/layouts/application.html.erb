@@ -28,6 +28,7 @@
           <%= link_to root_path do %>
             <strong class="is-size-3" style="font-family: cursive; color: black;">ラーメン レビュー</strong>
           <% end %>
+          <%= link_to image_tag("ramen.png", class:"ramen-icon"), "/" %>
         </p>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
@@ -43,6 +44,12 @@
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
+          <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
+            <%= form.text_field :keyword, placeholder:'キーワードから探す' , class: "input-box" %>
+            <%= form.button type: "submit", class:"search-button" do%>
+              <%= image_tag "search.png", class:"search-icon" %>
+            <% end %>
+          <% end %>
             <% if user_signed_in? %>
               <p class="navbar-item">ようこそ <%= current_user.username %> さん</p>
             <% end %>
