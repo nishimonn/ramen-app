@@ -35,7 +35,7 @@ Password/aaa111
 # 使用言語
 言語・フレームワーク  
 　Ruby-version/2.6.5  
-フロント  
+フロント  
 　HTML/CSS/Javascript  
 データベース  
 　MySQL
